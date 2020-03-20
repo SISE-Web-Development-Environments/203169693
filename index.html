@@ -2,9 +2,19 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="style.css" />
+<style type="text/css">
+ul { list-style-type: none; }
+ul li { display: inline;
+		padding: 15px;
+		background: NavajoWhite;
+	} 
+</style>
 </head>
 <body>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0"></script>
 <div id="menu">
+<ul>
 <li><a href="#about">About Me</a></li>
 <li><a href="#photos">My Photos</a></li>
 <li><a href="#playlist">My Playlist</a></li>
@@ -12,9 +22,19 @@
 <li><a href="#qrcoder">QR code</a></li>
 <li><a href="#spa">Q&A</a></li>
 <li><a href="#contact">Contact Me</a></li>
+</ul>
 </div>
 		  
 <section id="about" class="section">
+<style>
+    #aboutIN {
+      background-color: mintcream;
+	  font-family:courier;
+    }
+	    #photos {
+      background-color: lightcyan;
+    }
+  </style>
 <br/>
 <br/>
 <br/>
@@ -22,16 +42,15 @@
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-about me
+<h2 align="center"><b>About Me</b></h2>
+<hr/>
+<section id="aboutIN" class="section">
+<p>My name is Alon Gutman, I'm 27 years old. </p>
+<p>I live in Beer Sheva for the last 4 years. Originally from Mevaseret Zion. </p>
+<p>I study software and information Systems engineering, and this is <h3>my first html project ever.</h3> </p>
+<p>Beside studying, my hobbies are playing poker, cooking and traveling around the world when there is no corona virus around.  </p>
+</section>
+<hr/>
 <br/>
 <br/>
 <br/>
@@ -41,20 +60,21 @@ about me
 <br/>
 <br/>
 <br/>
+<h2><b>My Photos</b></h2>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my photos
+<img width="180" height="320" src="ME.JPEG" alt="photo of me in the airport"/>
+<img width="480" height="360" src="ME2.JPEG" alt="photo of me and a dog"/>
+<img height="360" src="ME4.JPEG" alt="photo of me and my gf"/>
+<img height="360" src="ME3.JPEG" alt="photo of me and a blimp"/>
+<img height="360" src="ME5.JPEG" alt="photo of me and my gf2"/>
+<img height="360" src="ME6.JPEG" alt="photo of me and a cake"/>
+<img height="360" src="ME7.JPEG" alt="photo of me and a friend"/>
+<img height="360" src="ME8.JPEG" alt="photo of me and a my family"/>
+<img height="360" src="ME9.JPEG" alt="photo of me and a friend2"/>
+
+
+
+
 <br/>
 <br/>
 <br/>
@@ -65,6 +85,10 @@ my photos
 <br/>
 <br/>
 <br/>
+<h2><b>My Playlist</b></h2>
+<br/>
+<br/>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLhf_RSaUvUVt5XeZEBdB_lirshAWDM5vd" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br/>
 <br/>
 <br/>
@@ -77,32 +101,10 @@ my photos
 <br/>
 <br/>
 <br/>
-my playlist
+<h2><b>Give me a Like</b></h2>
 <br/>
 <br/>
-<br/>
-</section>
-
-<section id="like" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-give me a like
-<br/>
-<br/>
+<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="10" data-layout="standard" data-action="like" data-size="small" data-share="true"></div>
 <br/>
 </section>
 
