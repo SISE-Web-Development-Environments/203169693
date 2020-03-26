@@ -5,3 +5,30 @@
 	height: 50px;
 	background: lightcyan;
 }
+h2 {
+  text-shadow: 5px 2px black;
+  font-family: ariel
+}
+#aboutIN{
+	animation: bgcolor infinite 100s;
+}
+@keyframes bgcolor{
+  0%{
+	background: #40ff00;
+  }
+  20%{
+	background: #00ff40;
+  }
+  40%{
+	background: #00ff80;
+  }
+  60%{
+	background: #00ffff	;
+  }
+  80%{
+	background: #0080ff;
+  }
+  100%{
+	background: #0040ff;
+  }
+  }
