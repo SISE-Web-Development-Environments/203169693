@@ -9,15 +9,19 @@ h1{
 		font-family: courier;
 		text-shadow: 5px black;
 		font-weight: border-bottom;
-
+	
 }
 h2 {
   text-shadow: 5px 2px black;
   font-family: ariel;
 }
+p{
+	font-family: courier;
+
+}
 #aboutIN{
 	animation: bgcolor infinite 25s;
-	  animation-iteration-count: 1;
+	  <!-- animation-iteration-count: 1; -->
 }
 @keyframes bgcolor{
   0%{
@@ -59,4 +63,9 @@ a{
 a:link, a:visited {
     color: black;
 	
+}
+.center{
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
