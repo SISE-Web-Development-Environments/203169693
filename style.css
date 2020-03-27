@@ -3,32 +3,60 @@
 	position: fixed;
 	width: 100%;
 	height: 50px;
-	background: lightcyan;
+	background: transparent;
+}
+h1{
+		font-family: courier;
+		text-shadow: 5px black;
+		font-weight: border-bottom;
+
 }
 h2 {
   text-shadow: 5px 2px black;
-  font-family: ariel
+  font-family: ariel;
 }
 #aboutIN{
-	animation: bgcolor infinite 100s;
+	animation: bgcolor infinite 25s;
+	  animation-iteration-count: 1;
 }
 @keyframes bgcolor{
   0%{
-	background: #40ff00;
+	background:  lightcyan
+;
   }
-  20%{
-	background: #00ff40;
-  }
-  40%{
-	background: #00ff80;
-  }
+
   60%{
-	background: #00ffff	;
+	background: #ccffcc;
   }
-  80%{
-	background: #0080ff;
+  
   }
-  100%{
-	background: #0040ff;
-  }
-  }
+
+hr.type_3 {
+border: 0;
+height: 25px;
+background-image: url(type_3.JPG);
+background-repeat: no-repeat;
+}
+
+
+li.button:hover {background-color:  #ffc34d;
+}
+
+li.button:active {
+  background-color:  #ffc34d;
+  box-shadow: 0 5px 5px #666;
+  transform: translateY(4px);
+}
+a{
+	  font-family: courier;
+	  text-decoration: none;
+	  font-weight: 900;
+	  color: black;
+	  font-size: large;
+
+
+}
+a:link, a:visited {
+    color: black;
+	
+}
