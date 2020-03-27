@@ -7,9 +7,12 @@
 <style type="text/css">
 ul { list-style-type: none; }
 ul li { display: inline;
-		padding: 15px;
+		padding: 8px;
 		background: NavajoWhite;
 		margin: 10px;
+		border-style: double;
+		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
 	} 
 </style>
 </head>
@@ -20,13 +23,13 @@ ul li { display: inline;
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0"></script>
 <div id="menu">
 <ul>
-<li><a href="#about">About Me</a></li>
-<li><a href="#photos">My Photos</a></li>
-<li><a href="#playlist">My Playlist</a></li>
-<li><a href="#like">Like</a></li>
-<li><a href="#qrcoder">QR code</a></li>
-<li><a href="#spa">Q&A</a></li>
-<li><a href="#contact">Contact Me</a></li>
+<li class="button"><a href="#about">About Me</a></li>
+<li class="button"><a href="#photos">My Photos</a></li>
+<li class="button"><a href="#playlist">My Playlist</a></li>
+<li class="button"><a href="#like">Like</a></li>
+<li class="button"><a href="#qrcoder">QR code</a></li>
+<li class="button"><a href="#spa">Q&A</a></li>
+<li class="button"><a href="#contact">Contact Me</a></li>
 </ul>
 </div>
 		  
@@ -37,7 +40,6 @@ ul li { display: inline;
 
 }
     #aboutIN {
-      background-color: mintcream;
 	  font-family:courier;
     }
 	    #photos {
@@ -54,26 +56,27 @@ ul li { display: inline;
 <br/>
 <br/>
 <br/>
-<h1 align="center"><b>About Me</b></h1>
-<hr/>
+<h1 align="left-side"><b>About Me</b></h1>
+<hr class="type_3">
 <section id="aboutIN" class="section">
 <p>My name is Alon Gutman, I'm 27 years old. </p>
 <p>I live in Beer Sheva for the last 4 years. Originally from Mevaseret Zion. </p>
 <p>I study software and information Systems engineering, and this is <h3>my first html project ever.</h3> </p>
-<p>Beside studying, my hobbies are playing poker, cooking and traveling around the world when there is no corona virus around.  </p>
+<p>Beside studying, my hobbies are playing poker, cooking and traveling</p>
+<p> around the world when there is no corona virus around.  </p>
 </section>
-<hr/>
+<hr class="type_3">
+<br/>
+<br/>
+<br/>
+<br/>
 <br/>
 <br/>
 <br/>
 </section>
-
 <section id="photos" class="section">
 <br/>
-<br/>
-<br/>
-<marquee><h1 style="font-size:500%;"> <b> My Photos</b></h1></marquee>
-<br/>
+<h2  style="font-size:500%; color: #4d94ff"><b>My Photos</b></h2>
 <img width="180" height="320" src="ME.JPEG" alt="photo of me in the airport"/>
 <img width="480" height="360" src="ME2.JPEG" alt="photo of me and a dog"/>
 <img height="360" src="ME4.JPEG" alt="photo of me and my gf"/>
@@ -118,13 +121,20 @@ ul li { display: inline;
 <br/>
 <br/>
 </section>
-
+<section id="like" class="section">
+<br/>
+<br/>
+<br/>
+<br/>
 <h1><b>Give me a Like</b></h1>
 <br/>
 <br/>
+<P> you know I deserve it!</p>
+<img height="260" src="press.JPG" alt="photo of like"/>
+
 <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="10" data-layout="standard" data-action="like" data-size="small" data-share="true"></div>
 <br/>
-
+</section>
 <section id="qrcoder" class="section">
 <br/>
 <br/>
@@ -132,18 +142,13 @@ ul li { display: inline;
 <br/>
 <br/>
 <br/>
+<h1>Scan my code</h1>
 <br/>
 <br/>
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-scan my code
-<br/>
+<br/><br/>
 <br/>
 <br/>
 </section>
@@ -165,7 +170,8 @@ scan my code
 <br/>
 <br/>
 <br/>
-ans
+<h1>Answer</h1>
+
 <br/>
 <br/>
 <br/>
@@ -195,8 +201,8 @@ ans
 <form action="mailto:alongutm@post.bgu.ac.il" method="post" enctype="text/plain">
 		<input name="name" type="text" class="form-contact" placeholder="Your Mail" required><br/>
 		<textarea name="message" class="form-contact" placeholder="Message" rows="5" required></textarea><br/>
-		<p>😄</p>
-		<p>😎</p>
+		<p>נ˜„</p>
+		<p>נ˜</p>
 		<p>&#128545</p>
 		<input type="submit" class="form-contact-send" value="Send Message">
 	</form>
@@ -216,7 +222,7 @@ $(function(){
 <script type="text/javascript">
  $(document).scroll(function() {
     $('#menu').toggle($(this).scrollTop()>1000)
- });​
+ });ג€‹
  </script>
 </body>
 </html>
