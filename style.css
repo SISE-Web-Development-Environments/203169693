@@ -19,6 +19,17 @@ p{
 	font-family: courier;
 
 }
+p.number{
+		font-family: courier;
+		font-size: 140%;
+		color: red;
+		font-weight: bold;
+
+}
+b{
+	font-size: 140%;
+	font-weight: bold;
+}
 #aboutIN{
 	animation: bgcolor infinite 25s;
 	  <!-- animation-iteration-count: 1; -->
